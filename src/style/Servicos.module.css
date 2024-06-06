@@ -1,0 +1,89 @@
+.servicosContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  background: url('../assets/joel-filipe-pyHPJEjUYHY-unsplash.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.servicosTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.servicosTop h3 {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+
+  color: var(--yellow-800);
+}
+
+.servicosTop h4 {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+
+  font-size: 1.1rem;
+}
+
+.listServicos {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: 232px 232px 232px;
+  
+  gap: 4rem;
+}
+
+.servicos {
+  background-color: #414040e3;
+  padding: 0.4rem;
+
+  border-radius: 8px;
+  
+  transition: scale 350ms ease, opacity 350ms linear;
+}
+
+.servicos:hover {
+  scale: 1.1;
+}
+.listServicos:has(.servicos:hover) .servicos:not(.servicos:hover) {
+  opacity: .6;
+}
+
+.servicos img {
+  width: 221px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.descricaoServicos {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  margin-top: 1rem;
+}
+
+.servicos p {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+
+  margin: 1rem 0;
+}

@@ -1,0 +1,12 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.footerContainer a img {
+  width: 9rem;
+}

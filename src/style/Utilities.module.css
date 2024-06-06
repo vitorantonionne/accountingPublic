@@ -1,0 +1,34 @@
+.utilities {
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #5757504d;
+  transition: 0.3s;
+
+}
+
+.utilities a {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* font-size: 1.1rem; */
+  color: var(--white-);
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out
+}
+
+.utilities a:hover {
+  transform: scale(1.1);
+}
+
+.utilities span::after {
+  content: "\0399";
+  color: var(--yellow-300);
+}

@@ -1,0 +1,27 @@
+.wecontainer {
+  display: grid;
+  grid-template-columns: 210px 210px 210px;
+  justify-content: center;
+  gap: 3.2rem;
+
+  padding: 6rem 0;
+  box-shadow: 1px 1px 1px 1px var(--gray-700);
+}
+
+.weAgilidade,
+.weCrescimento,
+.weServico {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.wecontainer  p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  font-size: 0.8rem;
+}
