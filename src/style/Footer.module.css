@@ -1,12 +1,53 @@
 .footerContainer {
   display: grid;
   grid-template-columns: 220px 220px 220px;
-  align-items: center;
+  align-items: baseline;
 
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
+
+
+  background: url('../assets/shubham-dhage-8yjryUayhzQ-unsplash.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
 }
 
 .footerContainer a img {
-  width: 9rem;
+  width: 8rem;
+}
+
+.footerContainer .footerImg {
+  position: relative;
+  top: 4rem;
+}
+
+.footerContainer .footerContactContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  list-style-type: none;
+  gap: 0.9rem;
+}
+
+.footerContainer .footerContactContainer li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footerContainer .footerContactCalendary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  list-style-type: none;
+  gap: 0.9rem;
+}
+
+.footerContainer .footerContactCalendary li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
