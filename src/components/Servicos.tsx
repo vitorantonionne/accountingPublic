@@ -18,7 +18,7 @@ export function Servicos() {
         <div className={styles.servicos}>
           <img className={styles.img} src={imgContabil} alt="imagem contabil" />
           <div className={styles.descricaoServicos}>
-            <CurrencyDollar color='#FFEF37' size={25}/>
+            <CurrencyDollar color='#111F4D' size={25}/>
             <strong>Contabil</strong>
           </div>
           <p>Oferecemos serviços contábeis especializados para empresas e indivíduos, abrangendo desde contabilidade geral até consultoria financeira estratégica.</p>
@@ -27,7 +27,7 @@ export function Servicos() {
         <div className={styles.servicos}>
           <img className={styles.img} src={imgFiscal} alt="imagem fiscal" />
           <div className={styles.descricaoServicos}>
-            <Calculator color='#FFEF37' size={25}/>
+            <Calculator color='#111F4D' size={25}/>
             <strong>Fiscal</strong>
           </div>
           <p>Oferecemos serviços fiscais abrangentes para empresas e indivíduos, incluindo preparação de declarações de impostos, planejamento tributário estratégico e consultoria especializada.</p>
@@ -36,7 +36,7 @@ export function Servicos() {
         <div className={styles.servicos}>
           <img className={styles.img} src={imgTrabalhista} alt="imagem trabalhista" />
           <div className={styles.descricaoServicos}>
-            <Handshake color='#FFEF37' size={25}/>
+            <Handshake color='#111F4D' size={25}/>
             <strong>Trabalhista</strong>
           </div>
           <p>Serviços especializados em questões trabalhistas para empresas de todos os tamanhos.</p>

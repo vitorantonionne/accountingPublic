@@ -7,14 +7,16 @@ import { Contact } from "./components/Contact.tsx"
 
 import './global.css'
 import { Footer } from "./components/Footer.tsx"
+import { DigitalContact } from "./components/DigitalContact.tsx"
 
 export function App() {
   return (
     <div>
       <Header />
-      <Utilities />
-      <NosEscolher />
+      <DigitalContact />
       <About />
+      <NosEscolher />
+      <Utilities />
       <article>
         <Servicos />
         <Contact />

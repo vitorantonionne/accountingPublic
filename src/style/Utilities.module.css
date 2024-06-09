@@ -1,26 +1,25 @@
 .utilities {
-  padding: 1rem 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  height: 100vh;
 
   display: flex;
   justify-content: center;
   gap: 2rem;
 
-  border-style: solid;
-  border-width: 1px 0px 1px 0px;
-  border-color: #5757504d;
-  transition: 0.3s;
-
+  background: url('../assets/bg-utilitie.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .utilities a {
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-style: normal;
-  /* font-size: 1.1rem; */
-  color: var(--white-);
+  font-size: 1rem;
+  color: var(--offWhite-);
+
   text-decoration: none;
+  
   transition: transform 0.2s ease-in-out
 }
 
@@ -30,5 +29,5 @@
 
 .utilities span::after {
   content: "\0399";
-  color: var(--yellow-300);
+  color: var(--offWhite);
 }

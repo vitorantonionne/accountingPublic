@@ -5,7 +5,7 @@
 }
 
 .formContent h4 {
-  color: var(--white);
+  color: var(--blueNavy-);
   font-family: "Poppins", sans-serif;
   font-style: normal;
 
@@ -20,7 +20,7 @@
 
 .form input {
   margin-bottom: 1rem;
-  background-color: #414040e3;
+  background-color: var(--form);
 
   border: 0;
   padding: 0.6rem;
@@ -28,18 +28,18 @@
   border-radius: 8px;
   width: 97%;
 
-  color: var(--white-);
+  color: var(--black-);
   font-size: 0.9rem;
 }
 
 .form input::placeholder {
-  color: var(--white-);
+  color: var(--black-);
 }
 
 .form textarea {
-  color: var(--white-);
+  color: var(--black-);
   font-size: 0.9rem;
-  background-color: #414040e3;
+  background-color: var(--form);
   width: 97%;
   resize: none;
   padding: 0.6rem;
@@ -49,7 +49,7 @@
 }
 
 .form textarea::placeholder {
-  color: var(--white-);
+  color: var(--black-);
 }
 
 .footer {
@@ -57,12 +57,12 @@
 }
 
 .footer button {
-  color: var(--white-);
+  color: var(--black-);
   padding: 0.6rem 0.6rem;
   border-radius: 8px;
   border: 0;
 
-  background-color: #414040e3;
+  background-color: var(--form);
 
   cursor: pointer;
 
@@ -71,5 +71,5 @@
 
 .footer button:hover {
   color: black;
-  background-color: var(--yellow-800);
+  background-color: var(--laranja);
 }

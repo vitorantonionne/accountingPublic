@@ -1,14 +1,12 @@
 :root {
   --white-: #FFFFFF;
 
-  --black-300: #0C0C0C;
+  --offWhite-: #F2F4F7;
+  --black-: #020205;
+  --blueNavy-: #111F4D;
+  --laranja: #E43A19;
 
-  --gray-700: #27272a77;
-  
-  --yellow-300: #E1D072;
-  --yellow-500: #FFF585;
-  --yellow-600: #D5CF92;
-  --yellow-800: #FFEF37;
+  --form: #cfd8e6;
 }
 
 /* :focus {
@@ -23,7 +21,7 @@
 }
 
 body {
-  background-color: var(--black-300);
+  background-color: var(--offWhite-);
   color: var(--white-);
   -webkit-font-smoothing: antialiased;
 }
@@ -33,7 +31,7 @@ body, textarea {
   font-weight: 400;
   font-style: normal;
 }
+
 html {
   scroll-behavior: smooth;
 }
-

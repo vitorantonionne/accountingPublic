@@ -1,0 +1,46 @@
+.digitalContainer {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  background: url('../assets/3d-background-with-white-cubes.jpg') no-repeat center/cover fixed;
+
+  color: var(--blueNavy-);
+
+  object-fit: cover;
+}
+
+.digitalContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+
+.digitalContact h1 {
+  font-size: 3.5rem;
+}
+
+.digitalContact p {
+  font-size: 1.5rem;
+}
+
+.contactLinkContent {
+  padding-top: 2.5rem;
+}
+
+.digitalContact a {
+  color: var(--white-);
+  text-decoration: none;
+  padding: 1.5rem;
+
+  background-color: var(--blueNavy-);
+
+  cursor: pointer;
+
+}
+
+.digitalContact a span::after {
+  content: "\226B";
+}

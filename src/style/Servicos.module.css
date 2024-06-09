@@ -5,10 +5,10 @@
   gap: 5rem;
 
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 
-  background: url('../assets/joel-filipe-pyHPJEjUYHY-unsplash.jpg') no-repeat;
-  background-position: center center;
+  background: url('../assets/3d-background-with-white-cubes.jpg') no-repeat;
+  background-position: left;
   background-size: cover;
   background-attachment: fixed;
 
@@ -27,7 +27,7 @@
   font-style: normal;
   font-size: 2rem;
 
-  color: var(--yellow-800);
+  color: var(--laranja);
 }
 
 .servicosTop h4 {
@@ -36,6 +36,8 @@
   font-style: normal;
 
   font-size: 1.1rem;
+
+  color: var(--blueNavy-);
 }
 
 .listServicos {
@@ -48,7 +50,7 @@
 }
 
 .servicos {
-  background-color: #414040e3;
+  background-color: var(--offWhite-);
   padding: 0.4rem;
 
   border-radius: 8px;
@@ -78,8 +80,12 @@
   margin-top: 1rem;
 }
 
+.descricaoServicos strong {
+  color: var(--blueNavy-);
+}
+
 .servicos p {
-  color: var(--white);
+  color: var(--blueNavy-);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;

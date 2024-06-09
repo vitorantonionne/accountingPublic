@@ -1,20 +1,36 @@
 .header {
-  width: 100%;
-  height: 640px;
-  background: url('../assets/luca-bravo-9l_326FISzk-unsplash.jpg') no-repeat;
-  background-position: center center;
-  background-size: cover;
-
+width: 98.8vw;
+height: 100vh;
 
   overflow: hidden;
-  padding: 1.5rem 2.5rem;
-  box-shadow: 1px 1px 6px 0px #41404080;
+
+  position: relative;
+  z-index: 0;
 }
 
-.contentLogoAndNav {
+.header video {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.contentHeader {
+  width: 100vw;
+  height: 100vh;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header .contentHeader .contentLogoAndNav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1.5rem 2.5rem;
 }
 
 .navigationContent .navigation {
@@ -27,10 +43,10 @@
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   
   text-decoration: none;
-  color: var(--white-);
+  color: var(--offWhite-);
   
   border-radius: 3px;
   border: 0;
@@ -39,14 +55,29 @@
   transition: transform .1s ease;
 }
 
-.LinkBackGround {
-  background-color: #57524E;
-}
+/* .LinkBackGround {
+  background-color: #111F4D;
+} */
 
 .navigation a:hover {
   transform: scale(1.1);
   outline: none;
-  background-color: #57524E;
+  background-color: var(--blueNavy-);
+}
+
+.homeContent {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+
+  color: var(-offWhite-);
+  
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  
+  animation: effect 2s;
 }
 
 .home {
@@ -55,7 +86,7 @@
   align-items: center;
   gap: 1rem;
 
-  margin-top: 13rem;
+  margin-top: 8rem;
 }
 
 .home > p {
@@ -64,55 +95,27 @@
   font-style: normal;
   font-size: 3.5rem;
 
-  color: var(--white-);
-
-  animation: effect- 1s;
+  color: var(-offWhite-);
 
   border-top: 0.1px solid var(--white-);
-}
-
-.homeContent {
-  display: flex;
-  gap: 0.3rem;
-
-  color: var(--white-);
-  
-  font-family: "Spectral", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1rem;
-  
-
-  animation: effect 2s;
 }
 
 .homeContent span::before {
   content: "\2022";
   padding: 0 0.275rem;
-  color: var(--yellow-300);
+  color: var(--offWhite-);
 }
 
 @keyframes effect {
   0% {
       opacity: 0;
-      transform: translateX(50%);
+      transform: translateY(50%);
   }
 
   100% {
       opacity: 1;
   }
  
-}
-
-@keyframes effect- {
-  0% {
-      opacity: 0;
-      transform: translateX(-50%);
-  }
-
-  100% {
-      opacity: 1;
-  }
 }
 
 

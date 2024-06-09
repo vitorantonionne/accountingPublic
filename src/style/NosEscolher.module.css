@@ -4,8 +4,11 @@
   justify-content: center;
   gap: 3.2rem;
 
+  background: url('../assets/bg-image-contactDigital.jpg') no-repeat center/cover;
+
   padding: 6rem 0;
   box-shadow: 1px 1px 1px 1px var(--gray-700);
+  color: var(--blueNavy-);
 }
 
 .weAgilidade,
