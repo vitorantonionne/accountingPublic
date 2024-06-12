@@ -1,33 +1,56 @@
-.utilities {
-  padding: 0.5rem 0;
-  height: 100vh;
-
+.utilitiesContainer {
+  background: url('../assets//6.png') no-repeat center/cover;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-
-  background: url('../assets/bg-utilitie.jpg') no-repeat;
-  background-size: cover;
-  background-position: center center;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  
+  height: 100vh;
+  padding-top: 1rem;
 }
 
-.utilities a {
+.utilitiesLinks {
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1rem;
-  color: var(--offWhite-);
-
-  text-decoration: none;
+  font-size: 1.4rem;
   
-  transition: transform 0.2s ease-in-out
+  display: flex;
+  gap: 1rem;
 }
 
-.utilities a:hover {
+.utilitiesLinks a {
+  text-decoration: none;
+  color: var(--offWhite-);
+  
+  transition: transform .2s ease-in-out;
+}
+
+.utilitiesLinks a:hover {
   transform: scale(1.1);
 }
 
-.utilities span::after {
+.utilitiesLinks span::after {
   content: "\0399";
   color: var(--offWhite);
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+  text-align: center;
+
+  gap: 2rem;
+  width: 100%;
+
+  padding: 0 2rem;
+
+}
+
+.imgReceita img {
+  width: 18rem;
+  object-fit: cover;
+  opacity: 0.7;
 }

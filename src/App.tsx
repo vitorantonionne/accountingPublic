@@ -16,11 +16,9 @@ export function App() {
       <DigitalContact />
       <About />
       <NosEscolher />
+      <Servicos />
       <Utilities />
-      <article>
-        <Servicos />
-        <Contact />
-      </article>
+      <Contact />
       <footer>
         <Footer />
       </footer>

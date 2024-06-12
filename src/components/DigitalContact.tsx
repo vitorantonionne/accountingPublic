@@ -9,6 +9,9 @@ export function DigitalContact() {
         <p>Ganhe tempo na gestão da sua empresa, conte <br /> com as nossas soluções.</p>
         <div className={styles.contactLinkContent}>
           <a href="#">CONTATO <span></span></a>
+          {/* <button onClick={() => document.getElementById('contact')?.scrollIntoView()}>
+            CONTATO
+          </button> */}
         </div>
       </div>
     </div>
