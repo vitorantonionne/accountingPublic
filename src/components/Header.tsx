@@ -1,6 +1,6 @@
 import styles  from '../style/Header.module.css'
 import logoTipo from '../assets/logoOsmar.png'
-import videoBg from '../assets/backgroundVideo.mp4'
+import videoBg from '../assets/videoHeaderBG.mp4'
 
 export function Header() {
   return (
@@ -15,24 +15,38 @@ export function Header() {
           <div className={styles.navigationContent}>
             <div className={styles.navigation}>
               <a href="#">Home</a>
-              <a href="#">Sobre nós</a>
-              <a href="#">Serviços</a>
-              <a className={styles.LinkBackGround} href="#">Contato</a>
+              <button 
+                onClick={() => 
+                  document.getElementById('about')?.scrollIntoView()}
+              >
+                Sobre nós
+              </button>
+              <button 
+                onClick={() =>
+                  document.getElementById('services')?.scrollIntoView()
+                }
+                >
+                Serviços
+              </button>
+              <button 
+                onClick={() => 
+                  document.getElementById('contact')?.scrollIntoView()
+                }>
+                  Contato
+              </button>
             </div>
           </div>      
         </div>
 
-        <div className={styles.homeContent}>
-          <div className={styles.home}>
-            <div className={styles.homeContent}>
-              <p>CONTÁBIL</p>
-              <span></span>
-              <p>FISCAL</p>
-              <span></span>
-              <p>TRABALHISTA</p>
-            </div>
-            <p>OSMAR CONTABILIDADE</p>
+        <div className={styles.home}>
+          <div className={styles.homeContent}>
+            <p>CONTÁBIL</p>
+            <span></span>
+            <p>FISCAL</p>
+            <span></span>
+            <p>TRABALHISTA</p>
           </div>
+          <p>OSMAR CONTABILIDADE</p>
         </div>
       </div>
     </header>

@@ -1,53 +1,75 @@
 .footerContainer {
-  display: grid;
-  grid-template-columns: 220px 220px 220px;
-  align-items: baseline;
-
+  background-color: var(--blueNavy-);
+  display: flex;
   justify-content: space-between;
-  padding: 4rem 2rem;
-
-
-  background: url('../assets/shubham-dhage-8yjryUayhzQ-unsplash.jpg') no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  background-size: cover;
+  padding: 3rem 1rem;
 }
 
-.footerContainer a img {
-  width: 8rem;
-}
-
-.footerContainer .footerImg {
-  position: relative;
-  top: 4rem;
-}
-
-.footerContainer .footerContactContainer{
+.footerContainer .imgContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  list-style-type: none;
-  gap: 0.9rem;
-}
-
-.footerContainer .footerContactContainer li {
-  display: flex;
-  gap: 0.5rem;
   align-items: center;
 }
 
-.footerContainer .footerContactCalendary {
+.imgContainer img {
+  width: 9rem;
+}
+
+.footerContainer .contactContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  list-style-type: none;
-  gap: 0.9rem;
+  gap: 0.5rem;
 }
 
-.footerContainer .footerContactCalendary li {
+.footerContainer .contactContainer button {
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  color: var(--white);
+  font-weight: bold;
+}
+
+.footerContainer .contactContainer button:hover {
+  color: var(--black-);
+}
+
+.footerContainer .locationContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerContainer .locationContainer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+}
+
+.footerContainer .locationContainer ul li {
+  display: flex;
+  gap: 0.4rem;
   align-items: center;
+}
+
+.footerContainer .openContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerContainer .openContainer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerContainer .openContainer ul li {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+
+  width: 60%;
 }

@@ -1,13 +1,11 @@
 .digitalContainer {
-  height: 100vh;
-
   display: flex;
   align-items: center;
+  
+  height: 100vh;
 
-  background: url('../assets/3d-background-with-white-cubes.jpg') no-repeat center/cover fixed;
-
+  background: url('../assets/imgContactDigitalBG.jpg') no-repeat center/cover fixed;
   color: var(--blueNavy-);
-
   object-fit: cover;
 }
 
@@ -19,7 +17,7 @@
 }
 
 .digitalContact h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .digitalContact p {
@@ -27,10 +25,10 @@
 }
 
 .contactLinkContent {
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
-.digitalContact a {
+.digitalContact button {
   color: var(--white-);
   text-decoration: none;
   padding: 1.5rem;
@@ -38,7 +36,12 @@
   background-color: var(--blueNavy-);
 
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
 
+.digitalContact button:hover {
+  background-color: var(--black-);
 }
 
 .digitalContact a span::after {

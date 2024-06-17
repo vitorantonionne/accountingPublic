@@ -5,12 +5,12 @@ export function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyBO_yCyD5rkWazHjAYTWCxrIUCRrgKdns4"
-  })
-
-  const position = {
-    lat: -3.729892240972425, 
-    lng: -38.51104680190622
-  }
+    })
+    
+    const position = {
+      lat: -3.729024076810223, 
+      lng: -38.51107165531361
+      }
 
   return (
     <div className={styles.map}>
@@ -19,8 +19,6 @@ export function Map() {
           mapContainerStyle={{width: '550px', height: '380px'}}
           center={position}
           zoom={15}
-          // onLoad={onLoad}
-          // onUnmount={onUnmount}
         >
           <Marker
             position={position}
@@ -29,5 +27,4 @@ export function Map() {
       ) : <></>}
     </div>
   )
-  
 }

@@ -1,8 +1,17 @@
 import { FormEvent, useState } from "react"
 
 import styles from '../style/FormContact.module.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export function FormContact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000
+    })
+  })
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [subject, setSubject] = useState('')
@@ -24,7 +33,7 @@ export function FormContact() {
   }
   
   return(
-    <div className={styles.formContent}>
+    <div className={styles.formContent} data-aos="fade-left">
       <h4>Fale Conosco</h4>
       <form onSubmit={handleSubmit} className={styles.form}>
         <label>

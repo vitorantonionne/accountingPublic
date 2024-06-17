@@ -1,10 +1,18 @@
 import styles from '../style/About.module.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    })
+  })
   return(
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id='about'>
 
-      <div className={styles.about}>
+      <div className={styles.about} data-aos="fade-up">
         <div>
           <h3>SOBRE</h3>
         </div>

@@ -3,10 +3,9 @@
   align-items: center;
   justify-content: center;
   
-  /* overflow: hidden; */
   padding: 7rem 0;
 
-  background: url('../assets/backgroundImgServices.jpeg') no-repeat;
+  background: url('../assets/imgAboutUsBG.jpeg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -28,18 +27,7 @@
 .aboutContainer .img {
   width: 350px;
   height: 300px;
-  /* background: url('../assets/664e5295-39b5-4399-a4cb-4bb798c0dca3.png') no-repeat;
-  background-position: center center;
-  background-size: cover; */
 }
-
-/* .aboutContainer img {
-  width: 550px;
-  height: 350px;
-
-  object-fit: cover;
-  border-radius: 8px;
-} */
 
 .infoContainer {
   display: flex;

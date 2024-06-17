@@ -56,14 +56,41 @@ height: 100vh;
   transition: transform .1s ease;
 }
 
-/* .LinkBackGround {
-  background-color: #111F4D;
-} */
+.navigation button {
+  background: transparent;
+  border: 0;
+  color: var(--offWhite-);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.4rem;
+
+  border-radius: 3px;
+  border: 0;
+  padding: 0.275rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  transform: scale(1.1);
+  outline: none;
+  background-color: var(--blueNavy-);
+}
 
 .navigation a:hover {
   transform: scale(1.1);
   outline: none;
   background-color: var(--blueNavy-);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 8rem;
 }
 
 .homeContent {
@@ -77,17 +104,8 @@ height: 100vh;
   font-weight: 600;
   font-style: normal;
   font-size: 1.3rem;
-  
+
   animation: effectBottom 2s;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-
-  margin-top: 8rem;
 }
 
 .home > p {
@@ -99,6 +117,8 @@ height: 100vh;
   color: var(-offWhite-);
 
   border-top: 0.1px solid var(--white-);
+
+  animation: effectBottomLeft 2s;
 }
 
 .homeContent span::before {
@@ -110,7 +130,19 @@ height: 100vh;
 @keyframes effectBottom {
   0% {
       opacity: 0;
-      transform: translateY(50%);
+      transform: translateX(-50%);
+  }
+
+  100% {
+      opacity: 1;
+  }
+ 
+}
+
+@keyframes effectBottomLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(50%);
   }
 
   100% {
@@ -128,15 +160,4 @@ height: 100vh;
   100% {
       opacity: 1;
   }
- 
 }
-
-
-/* @keyframes animateBackground {
-  0% {
-      background-position: 0% 0%; 
-  }
-  100% {
-      background-position: 100% 100%; 
-  }
-} */

@@ -13,6 +13,7 @@
     "@phosphor-icons/react": "^2.1.5",
     "@react-google-maps/api": "^2.19.3",
     "@types/css-modules": "^1.0.5",
+    "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
