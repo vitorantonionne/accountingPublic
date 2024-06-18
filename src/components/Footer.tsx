@@ -13,19 +13,27 @@ export function Footer() {
       <div className={styles.contactContainer}>
         <button
           onClick={() => 
-            document.getElementById('contact')?.scrollIntoView()
+            document.getElementById('contact')?.scrollIntoView({behavior: "smooth"})
           }
-        >Contato</button>
+        >
+          Contato
+        </button>
+
         <button
           onClick={() => 
-            document.getElementById('about')?.scrollIntoView()
+            document.getElementById('about')?.scrollIntoView({behavior: "smooth"})
           }
-        >Sobre nós</button>
+        >
+          Sobre nós
+        </button>
+        
         <button
           onClick={() => 
-            document.getElementById('services')?.scrollIntoView()
+            document.getElementById('services')?.scrollIntoView({behavior: "smooth"})
           }
-        >Serviços</button>
+        >
+          Serviços
+        </button>
       </div>
       <div className={styles.locationContainer}>
         <ul>

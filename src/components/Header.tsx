@@ -17,21 +17,25 @@ export function Header() {
               <a href="#">Home</a>
               <button 
                 onClick={() => 
-                  document.getElementById('about')?.scrollIntoView()}
+                  document.getElementById('about')?.scrollIntoView({behavior: "smooth"})
+                }
               >
                 Sobre nós
               </button>
+              
               <button 
                 onClick={() =>
-                  document.getElementById('services')?.scrollIntoView()
+                  document.getElementById('services')?.scrollIntoView({behavior: "smooth"})
                 }
-                >
+              >
                 Serviços
               </button>
+
               <button 
                 onClick={() => 
-                  document.getElementById('contact')?.scrollIntoView()
-                }>
+                  document.getElementById('contact')?.scrollIntoView({behavior: "smooth"})
+                }
+              >
                   Contato
               </button>
             </div>
