@@ -16,24 +16,24 @@ export function AlternateText() {
 
   const textOne = (
     <>
-      Não fique de fora, <br />
-      mantenha-se  <br />
+      Não fique de fora, 
+      mantenha-se 
       Atualizado!
     </>
   )
 
   const textTwo = (
     <>
-      DECLARAÇÃO DO <br /> 
-      IMPOSTO DE RENDA <br />
-      2025 <br />
+      DECLARAÇÃO DO 
+      IMPOSTO DE RENDA
+      2025 
       <DateImpost />
     </>
   )
 
   return(
     <div className={styles.textAlternate}>
-      <strong>{visibility? textOne : textTwo}</strong> 
+      <strong style={{textAlign: "center"}}>{visibility? textOne : textTwo}</strong> 
     </div>
   )
 }

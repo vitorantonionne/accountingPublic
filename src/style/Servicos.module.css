@@ -39,16 +39,12 @@
 }
 
 .listServicos {
-  /* display: grid;
+  display: grid;
   justify-content: center;
 
   grid-template-columns: 232px 232px 232px 232px;
   
-  gap: 4rem; */
-
-  display: flex;
   gap: 4rem;
-  padding: 0 4rem;
 }
 
 .servicos {
@@ -98,4 +94,18 @@
   font-size: 0.9rem;
 
   margin: 1rem 0;
+}
+
+@media (max-width: 1285px) {
+  .listServicos {
+    display: grid;
+    grid-template-columns: 235px 235px 235px ;
+  }
+}
+
+@media (max-width: 960px) {
+  .listServicos {
+    display: grid;
+    grid-template-columns: 235px 235px;
+  }
 }

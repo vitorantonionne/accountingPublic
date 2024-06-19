@@ -16,8 +16,21 @@
 }
 
 .contact {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  padding-top: 2rem;
-  gap: 2rem;
+@media (max-width: 981px) {
+  .contact {
+    display: flex;
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

@@ -14,7 +14,7 @@ export function Utilities() {
   })
   return (
     <div className={styles.utilitiesContainer}>
-      <div className={styles.utilitiesLinks} data-aos="fade-up">
+      <div className={styles.utilitiesLinks}>
         <a href="https://www.gov.br/receitafederal/pt-br" target='_blank'>Receita Federal</a>
         <span></span>
         <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/tributos/irpf-imposto-de-renda-pessoa-fisica" target='_blank'>IRPF</a>

@@ -33,7 +33,7 @@ export function FormContact() {
   }
   
   return(
-    <div className={styles.formContent} data-aos="fade-left">
+    <div className={styles.formContent} data-aos="fade-up">
       <h4>Fale Conosco</h4>
       <form onSubmit={handleSubmit} className={styles.form}>
         <label>

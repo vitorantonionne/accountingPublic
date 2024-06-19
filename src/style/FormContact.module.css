@@ -73,3 +73,15 @@
   color: black;
   background-color: var(--laranja);
 }
+
+@media (max-width: 949px) {
+  .formContent {
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .formContent {
+    max-width: 70rem;
+  }
+}
