@@ -7,7 +7,17 @@ import imgAberEmpresa from'../assets/imgAberEmpresa.jpg'
 
 import styles from '../style/Servicos.module.css'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
+
 export function Servicos() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    })
+  })
+
   return(
     <div className={styles.servicosContent} id='services'>
       <div className={styles.servicosTop}>
