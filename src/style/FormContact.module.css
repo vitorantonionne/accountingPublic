@@ -66,12 +66,12 @@
 
   cursor: pointer;
 
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer button:hover {
-  color: black;
-  background-color: var(--laranja);
+  color: var(--white-);
+  background-color: var(--black-);
 }
 
 @media (max-width: 949px) {

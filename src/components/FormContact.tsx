@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 export function FormContact() {
   useEffect(() => {
     AOS.init({
-      duration: 2000
+      duration: 1000
     })
   })
 
@@ -33,7 +33,7 @@ export function FormContact() {
   }
   
   return(
-    <div className={styles.formContent} data-aos="fade-up">
+    <div className={styles.formContent} data-aos="fade-left">
       <h4>Fale Conosco</h4>
       <form onSubmit={handleSubmit} className={styles.form}>
         <label>

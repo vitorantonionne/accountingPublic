@@ -1,7 +1,8 @@
 .footerContainer {
   background-color: var(--blueNavy-);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
   padding: 3rem 1rem;
 }
 
@@ -18,6 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: baseline;
+
   gap: 0.5rem;
 }
 
@@ -27,8 +30,9 @@
   border: 0;
   cursor: pointer;
 
-  color: var(--white);
+  color: var(--white-);
   font-weight: bold;
+  font-size: 16px;
 }
 
 .footerContainer .contactContainer button:hover {
@@ -70,6 +74,4 @@
   display: flex;
   gap: 0.4rem;
   align-items: center;
-
-  width: 60%;
 }

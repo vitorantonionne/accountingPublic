@@ -24,11 +24,6 @@
   color: var(--blueNavy-);
 }
 
-.aboutContainer .img {
-  width: 350px;
-  height: 300px;
-}
-
 .infoContainer {
   display: flex;
   flex-direction: column;

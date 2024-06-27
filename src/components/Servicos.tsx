@@ -26,40 +26,50 @@ export function Servicos() {
       </div>
 
       <div className={styles.listServicos}>
-        <div className={styles.servicos} >
-          <img className={styles.img} src={imgContabil} alt="imagem Imposto" />
-          <div className={styles.descricaoServicos}>
-            <Calculator color='#020205' size={25}/>
-            <strong>Imposto de Renda</strong>
+
+        <div data-aos="fade-left">
+          <div className={styles.servicos}>
+            <img className={styles.img} src={imgContabil} alt="imagem Imposto" />
+            <div className={styles.descricaoServicos}>
+              <Calculator color='#020205' size={25}/>
+              <strong>Imposto de Renda</strong>
+            </div>
+            <p>Elaboramos a declaração do Imposto de Renda Pessoa Física e Jurídica, assegurando que todas as informações estejam precisas e em total conformidade com as normas da Receita Federal.</p>
           </div>
-          <p>Elaboramos a declaração do Imposto de Renda Pessoa Física e Jurídica, assegurando que todas as informações estejam precisas e em total conformidade com as normas da Receita Federal.</p>
         </div>
 
-        <div className={styles.servicos} >
-          <img className={styles.img} src={imgFiscal} alt="imagem MEI" />
-          <div className={styles.descricaoServicos}>
-            <Storefront color='#020205' size={25}/>
-            <strong>Migrar do MEI</strong>
+        <div data-aos="fade-left">
+          <div className={styles.servicos}>
+            <img className={styles.img} src={imgFiscal} alt="imagem MEI" />
+            <div className={styles.descricaoServicos}>
+              <Storefront color='#020205' size={25}/>
+              <strong>Migrar do MEI</strong>
+            </div>
+            <p>Precisa migrar sua empresa do MEI? Simplificamos todo esse processo para você!</p>
           </div>
-          <p>Precisa migrar sua empresa do MEI? Simplificamos todo esse processo para você!</p>
         </div>
 
-        <div className={styles.servicos} >
-          <img className={styles.img} src={imgTrabalhista} alt="imagem trabalhista" />
-          <div className={styles.descricaoServicos}>
-            <Handshake color='#020205' size={25}/>
-            <strong>Trabalhista</strong>
+        <div data-aos="fade-right">
+          <div className={styles.servicos} >
+            <img className={styles.img} src={imgTrabalhista} alt="imagem trabalhista" />
+            <div className={styles.descricaoServicos}>
+              <Handshake color='#020205' size={25}/>
+              <strong>Trabalhista</strong>
+            </div>
+            <p>Fornecemos serviços especializados em questões trabalhistas, adaptados às necessidades de pessoas físicas e jurídicas de todos os portes.</p>
           </div>
-          <p>Fornecemos serviços especializados em questões trabalhistas, adaptados às necessidades de pessoas físicas e jurídicas de todos os portes.</p>
         </div>
 
-        <div className={styles.servicos} >
-          <img className={styles.img} src={imgAberEmpresa} alt="imagem fiscal" />
-          <div className={styles.descricaoServicos}>
-            <BuildingOffice color='#020205' size={25}/>
-            <strong>Abertura de Empresa</strong>
+
+        <div data-aos="fade-right">
+          <div className={styles.servicos} >
+            <img className={styles.img} src={imgAberEmpresa} alt="imagem fiscal" />
+            <div className={styles.descricaoServicos}>
+              <BuildingOffice color='#020205' size={25}/>
+              <strong>Abertura de Empresa</strong>
+            </div>
+            <p>Precisa formalizar sua empresa? Nós auxiliamos em todo o processo burocrático de maneira ágil e descomplicada.</p>
           </div>
-          <p>Precisa formalizar sua empresa? Nós auxiliamos em todo o processo burocrático de maneira ágil e descomplicada.</p>
         </div>
       </div>
     </div>

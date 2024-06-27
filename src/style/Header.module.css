@@ -26,70 +26,13 @@
   z-index: 2;
 }
 
-.header .contentHeader .contentLogoAndNav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 2.5rem;
-}
-
-.navigationContent .navigation {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  animation: effectTop 2s;
-}
-
-.navigation a {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.4rem;
-  
-  text-decoration: none;
-  color: var(--offWhite-);
-  
-  border-radius: 3px;
-  border: 0;
-  padding: 0.275rem;
-  
-  transition: transform .1s ease;
-}
-
-.navigation button {
-  background: transparent;
-  border: 0;
-  color: var(--offWhite-);
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.4rem;
-
-  border-radius: 3px;
-  border: 0;
-  padding: 0.275rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.navigation button:hover {
-  transform: scale(1.1);
-  outline: none;
-  background-color: var(--blueNavy-);
-}
-
-.navigation a:hover {
-  transform: scale(1.1);
-  outline: none;
-  background-color: var(--blueNavy-);
-}
-
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 
-  margin-top: 15rem;
+  margin-top: 9rem;
 }
 
 .homeContent {
@@ -148,15 +91,4 @@
       opacity: 1;
   }
  
-}
-
-@keyframes effectTop {
-  0% {
-      opacity: 0;
-      transform: translateY(-50%);
-  }
-
-  100% {
-      opacity: 1;
-  }
 }

@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 export function DigitalContact() {
   useEffect(() => {
     AOS.init({
-      duration: 1500
+      duration: 1000
     })
   })
   return(

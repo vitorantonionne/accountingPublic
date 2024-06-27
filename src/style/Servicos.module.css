@@ -8,9 +8,8 @@
   padding-bottom: 4rem;
 
   background: url('../assets/imgNosEscolherBG.jpg') no-repeat;
-  background-position: left;
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .servicosTop {
@@ -50,6 +49,7 @@
 .servicos {
   display: flex;
   flex-direction: column;
+  height: 23.4rem;
 
   background-color: var(--offWhite-);
   padding: 0.4rem;
