@@ -49,7 +49,7 @@ export function Servicos() {
           </div>
         </div>
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-left">
           <div className={styles.servicos} >
             <img className={styles.img} src={imgTrabalhista} alt="imagem trabalhista" />
             <div className={styles.descricaoServicos}>
@@ -61,7 +61,7 @@ export function Servicos() {
         </div>
 
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-left">
           <div className={styles.servicos} >
             <img className={styles.img} src={imgAberEmpresa} alt="imagem fiscal" />
             <div className={styles.descricaoServicos}>

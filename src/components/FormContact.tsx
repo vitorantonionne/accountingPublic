@@ -41,9 +41,9 @@ export function FormContact() {
             type="text" 
             value={name} 
             onChange={(e) => 
-              setName(e.target.value) } 
-              required
-              placeholder="Nome"
+            setName(e.target.value) } 
+            required
+            placeholder="Nome"
               />
         </label>
 

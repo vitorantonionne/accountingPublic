@@ -92,3 +92,19 @@
   }
  
 }
+
+@media (max-width: 790px) {
+  .home > p {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .homeContent {
+    font-size: 0.9rem;
+  }
+  
+  .home > p {
+    font-size: 2.5rem;
+  }
+}

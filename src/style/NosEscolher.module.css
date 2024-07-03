@@ -28,3 +28,9 @@
 
   font-size: 0.8rem;
 }
+
+@media (max-width: 734px) {
+  .wecontainer {
+    grid-template-columns: 210px 210px;
+  }
+}
