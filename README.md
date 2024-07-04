@@ -5,7 +5,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - ReactJS
 - JavaScript
 - TypeScript
-- API
 
 ## 💻 Projeto
 
