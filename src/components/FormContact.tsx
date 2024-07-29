@@ -19,9 +19,9 @@ export function FormContact() {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
 
-    const message = `Olá , vim do site , quero mais informaçoes \nAssunto: \n${subject}`
+    const message = `Olá, vim do site, gostaria de mais informações. \nAssunto: \n${subject}`
     const encodedMessage = encodeURIComponent(message)
-    const phoneNumber = '5585991795541'
+    const phoneNumber = '5585999856813'
 
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`
 

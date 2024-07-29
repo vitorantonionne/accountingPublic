@@ -14,8 +14,8 @@ export function Footer() {
       <div className={styles.locationContainer}>
         <ul>
           <li><span><MapPin size={22} color='#F2F4F7'/></span>R.Pereira Filgueiras, 1310 - Sala 103 - Aldeota</li>
-          <li><span><Phone size={22}color='#F2F4F7'/></span>(85) 99179 - 5541</li>
-          <li><span><Envelope size={22}color='#F2F4F7'/></span>eloscontabilidades@bol.com</li>
+          <li><span><Phone size={22}color='#F2F4F7'/></span>(85) 98816 - 4544 <br /> (85) 99985 - 6813</li>
+          <li><span><Envelope size={22}color='#F2F4F7'/></span>eloscontabilidades@bol.com.br</li>
           <li>CNPJ: 05.789.851/0001-89</li>
         </ul>
       </div>

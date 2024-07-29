@@ -85,3 +85,12 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 589px) {
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -74,3 +74,13 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .navigation a {
+    font-size: 0.8rem;
+  }
+
+  .navigation button {
+    font-size: 0.9rem;
+  }
+}

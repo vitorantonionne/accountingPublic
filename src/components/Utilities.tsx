@@ -16,7 +16,7 @@ export function Utilities() {
     <div className={styles.utilitiesContainer}>
       <div className={styles.utilitiesLinks}>
         <div className={styles.utilitiesOne}>
-          <a href="https://www.gov.br/receitafederal/pt-br" target='_blank'>Receita Federal</a>
+          <a href="https://www.gov.br/receitafederal/pt-br" target='_blank'>Receita</a>
           <span></span>
           <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/tributos/irpf-imposto-de-renda-pessoa-fisica" target='_blank'>IRPF</a>
           <span></span>
