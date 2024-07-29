@@ -1,0 +1,44 @@
+.whatsButton {
+  background-color: #25D366;
+
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  border-radius: 8px;
+}
+
+.whatsButton form button {
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+  border-radius: 8px;
+
+  padding: 0.1rem;
+  transition: 0.2s;
+}
+
+.whatsButton form button:hover {
+  background-color: #14853e;
+  scale: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .whatsButton {
+    top: 95%;
+    left: 93%;
+  }
+}
+
+@media (max-width: 430px) {
+  .whatsButton {
+    left: 85%;
+  }
+}
+
+@media (max-width: 344px) {
+  .whatsButton {
+    top: 93%;
+    left: 80%;
+  }
+}

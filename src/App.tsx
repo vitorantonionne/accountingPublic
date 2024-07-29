@@ -8,6 +8,7 @@ import { Contact } from "./components/Contact.tsx"
 import './global.css'
 import { Footer } from "./components/Footer.tsx"
 import { DigitalContact } from "./components/DigitalContact.tsx"
+import { Whats } from "./components/Whats.tsx"
 
 export function App() {
   return (
@@ -19,6 +20,7 @@ export function App() {
       <Servicos />
       <Utilities />
       <Contact />
+      <Whats />
       <footer>
         <Footer />
       </footer>
