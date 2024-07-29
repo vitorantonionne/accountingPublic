@@ -22,7 +22,7 @@ export function Servicos() {
     <div className={styles.servicosContent} id='services'>
       <div className={styles.servicosTop}>
         <h3>Serviços</h3>
-        <h4>Principais serviços oferecidos em nosso escritório</h4>
+        <p>Principais serviços oferecidos em nosso escritório</p>
       </div>
 
       <div className={styles.listServicos}>
