@@ -82,7 +82,7 @@
   .footerContainer {
     display: grid;
     grid-template-columns: 210px 209px;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -92,5 +92,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
   }
 }

@@ -15,7 +15,7 @@ export function Footer() {
         <ul>
           <li><span><MapPin size={22} color='#F2F4F7'/></span>R.Pereira Filgueiras, 1310 - Sala 103 - Aldeota</li>
           <li><span><Phone size={22}color='#F2F4F7'/></span>(85) 98816 - 4544 <br /> (85) 99985 - 6813</li>
-          <li><span><Envelope size={22}color='#F2F4F7'/></span>eloscontabilidades@bol.com.br</li>
+          <li><span><Envelope size={22}color='#F2F4F7'/></span>oscrar1234@gmail.com <br /> eleonoracmorais@bol.com.br</li>
           <li>CRC - CE 013079/02</li>
         </ul>
       </div>
