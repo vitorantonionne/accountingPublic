@@ -1,10 +1,11 @@
 .header {
   height: 100vh;
-
   overflow: hidden;
 
   position: relative;
   z-index: 0;
+
+  /* flex-wrap: wrap; */
 }
 
 .header video {
@@ -24,6 +25,10 @@
   top: 0;
   left: 0;
   z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 .home {
@@ -32,7 +37,7 @@
   align-items: center;
   gap: 1rem;
 
-  margin-top: 9rem;
+  /* margin-top: 9rem; */
 }
 
 .homeContent {
@@ -93,6 +98,12 @@
  
 }
 
+@media (max-width: 853px) {
+  /* .header {
+    height: 75vh;
+  } */
+}
+
 @media (max-width: 790px) {
   .home > p {
     font-size: 2.9rem;
@@ -106,5 +117,16 @@
   
   .home > p {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 516px) {
+  .home > p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 430px) {
+  .home > p {
+    font-size: 1.8rem;
   }
 }

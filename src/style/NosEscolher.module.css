@@ -34,3 +34,15 @@
     grid-template-columns: 210px 210px;
   }
 }
+
+@media (max-width: 469px) {
+  .wecontainer {
+    gap: 1rem;
+  };
+}
+
+@media (max-width: 435px) {
+  .wecontainer {
+    grid-template-columns: 175px 180px;
+  };
+}

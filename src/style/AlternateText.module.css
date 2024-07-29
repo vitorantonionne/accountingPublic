@@ -9,3 +9,17 @@
   width: 450px;
   height: 0px;
 }
+
+@media (max-width: 482px) {
+  .textAlternate {
+    font-size: 1.6rem;
+    width: 400px;
+  }
+}
+
+@media (max-width: 433px) {
+  .textAlternate {
+    font-size: 1.6rem;
+    width: 335px;
+  }
+}

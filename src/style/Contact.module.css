@@ -4,6 +4,8 @@
   align-items: center;
   gap: 2rem;
   padding-top: 2rem;
+  
+  overflow: hidden;
 }
 
 .contactContainer h1 {
@@ -18,8 +20,6 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  overflow: hidden;
 }
 
 @media (max-width: 981px) {

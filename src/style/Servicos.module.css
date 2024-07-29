@@ -110,3 +110,41 @@
     grid-template-columns: 235px 235px;
   }
 }
+
+@media (max-width: 513px) {
+  .listServicos {
+    display: grid;
+    grid-template-columns: 180px 180px;
+  }
+
+  .servicos img {
+    /* width: 221px; */
+    width: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 509px) {
+  .servicosTop h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .listServicos {
+    display: grid;
+    grid-template-columns: 140px 140px;
+  }
+
+  .servicos img {
+    /* width: 221px; */
+    width: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .servicosTop h4 {
+    font-size: 0.9rem;
+  }
+}

@@ -16,7 +16,7 @@ export function Map() {
     <div className={styles.map}>
       {isLoaded ? (
         <GoogleMap
-          mapContainerStyle={{width: '550px', height: '380px'}}
+          mapContainerStyle={{width: '370px', height: '380px'}}
           center={position}
           zoom={15}
         >

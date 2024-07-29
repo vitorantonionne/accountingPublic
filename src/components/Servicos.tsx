@@ -34,7 +34,7 @@ export function Servicos() {
               <Calculator color='#020205' size={25}/>
               <strong>Imposto de Renda</strong>
             </div>
-            <p>Elaboramos a declaração do Imposto de Renda Pessoa Física e Jurídica, assegurando que todas as informações estejam precisas e em total conformidade com as normas da Receita Federal.</p>
+            <p>Elaboramos a declaração do Imposto de Renda Pessoa Física e Jurídica, em total conformidade com as normas da Receita Federal.</p>
           </div>
         </div>
 
