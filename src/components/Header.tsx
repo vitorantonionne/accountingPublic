@@ -7,7 +7,7 @@ import { Menu } from './Menu'
 export function Header() {
   return (
     <header className={styles.header}>
-      <video  autoPlay loop muted className={styles.videoBG} >
+      <video autoPlay loop muted playsInline className={styles.videoBG} >
         <source src={videoBg} type='video/mp4'/>
       </video>
 
