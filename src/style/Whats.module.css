@@ -25,8 +25,15 @@
 
 @media (max-width: 1024px) {
   .whatsButton {
-    top: 95%;
+    top: 89%;
     left: 93%;
+  }
+}
+
+@media (max-width: 726px) {
+  .whatsButton {
+    top: 87%;
+    left: 90%;
   }
 }
 
@@ -39,7 +46,7 @@
 
 @media (max-width: 344px) {
   .whatsButton {
-    top: 93%;
+    top: 88%;
     left: 80%;
   }
 }
