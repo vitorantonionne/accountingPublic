@@ -110,6 +110,10 @@
     display: grid;
     grid-template-columns: 235px 235px;
   }
+
+  .servicosTop p {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 513px) {
@@ -133,6 +137,24 @@
   .servicosTop p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 430px) {
+  .listServicos {
+    display: grid;
+    grid-template-columns: 160px 160px;
+  }
+
+  .servicos img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .servicosTop p {
+    font-size: 0.9rem;
+  }
+
 }
 
 @media (max-width: 390px) {
