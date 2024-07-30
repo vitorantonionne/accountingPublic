@@ -32,12 +32,19 @@
 @media (max-width: 734px) {
   .wecontainer {
     grid-template-columns: 210px 210px;
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 469px) {
   .wecontainer {
-    gap: 1rem;
+    gap: 1.7rem;
+  };
+}
+
+@media (max-width: 459px) {
+  .wecontainer {
+    grid-template-columns: 170px 170px;
   };
 }
 
