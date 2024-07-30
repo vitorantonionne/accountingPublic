@@ -13,7 +13,7 @@ export function Menu() {
                   document.getElementById('about')?.scrollIntoView({behavior: "smooth"})
                 }
               >
-                Sobre Nós
+                Sobre
               </button>
               
               <button 
