@@ -1,9 +1,8 @@
-import { FormEvent, useState } from "react"
-
 import styles from '../style/FormContact.module.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import { useForm } from "react-hook-form"
 
 export function FormContact() {
   useEffect(() => {
@@ -12,14 +11,17 @@ export function FormContact() {
     })
   })
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [subject, setSubject] = useState('')
+  interface FormProps  {
+    nome: string
+    email: string
+    menssagem: string
+  }
 
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault()
+  const { register, handleSubmit, reset} = useForm<FormProps>()
 
-    const message = `Olá, vim do site, gostaria de mais informações. \nAssunto: \n${subject}`
+  const handleSubmitFormUser = (data: FormProps) => {
+
+    const message = `Olá, vim do site, sou ${data.nome} gostaria de mais informações. \nAssunto: \n${data.menssagem}`
     const encodedMessage = encodeURIComponent(message)
     const phoneNumber = '5585999856813'
 
@@ -27,41 +29,33 @@ export function FormContact() {
 
     window.open(whatsappURL, '_blank')
 
-    setName('')
-    setEmail('')
-    setSubject('')
+   reset() 
   }
   
   return(
     <div className={styles.formContent} data-aos="fade-left">
       <h4>Fale Conosco</h4>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <label>
-          <input 
-            type="text" 
-            value={name} 
-            onChange={(e) => 
-            setName(e.target.value) } 
-            required
-            placeholder="Nome"
-              />
-        </label>
+      <form onSubmit={handleSubmit(handleSubmitFormUser)} className={styles.form}>
 
-        <label>
-          <input 
-            type="text" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required
-            placeholder="E-mail"
+        <input 
+          id="nome"
+          placeholder="Nome"
+          {...register('nome') }
             />
-        </label>
+
+        <input
+          id="email" 
+          required
+          placeholder="E-mail"
+          {...register('email')}
+          />
+
         
         <textarea
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
+          id="messagem"
           placeholder="Menssagem"
           required
+          {...register('menssagem')}
           />
 
         <footer className={styles.footer}>
