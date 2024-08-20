@@ -3,6 +3,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import { useForm } from "react-hook-form"
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as zod from 'zod'
 
 export function FormContact() {
   useEffect(() => {
@@ -17,11 +19,25 @@ export function FormContact() {
     menssagem: string
   }
 
-  const { register, handleSubmit, reset} = useForm<FormProps>()
+  const newFormValidationSchema = zod.object({
+    nome: zod.string().min(1, 'Escreva seu nome'),
+    email: zod.string().min(1, 'Escreva seu Email'),
+    menssagem: zod.string().min(1, 'Escreva o assunto da menssagem'),
+
+  })
+
+  const { register, handleSubmit, reset} = useForm<FormProps>({
+    resolver: zodResolver(newFormValidationSchema),
+    defaultValues: {
+      nome: '',
+      email: '',
+      menssagem: ''
+    }
+  })
 
   const handleSubmitFormUser = (data: FormProps) => {
 
-    const message = `Olá, vim do site, sou ${data.nome} gostaria de mais informações. \nAssunto: \n${data.menssagem}`
+    const message = `Olá, vim do site, sou ${data.nome} gostaria de mais informações. \n\nAssunto: \n${data.menssagem}`
     const encodedMessage = encodeURIComponent(message)
     const phoneNumber = '5585999856813'
 
@@ -39,23 +55,24 @@ export function FormContact() {
 
         <input 
           id="nome"
+          required
           placeholder="Nome"
-          {...register('nome') }
+          {...register('nome', { required: true}) }
             />
 
         <input
           id="email" 
           required
           placeholder="E-mail"
-          {...register('email')}
+          {...register('email', { required: true})}
           />
 
         
         <textarea
           id="messagem"
-          placeholder="Menssagem"
           required
-          {...register('menssagem')}
+          placeholder="Menssagem"
+          {...register('menssagem', { required: true})}
           />
 
         <footer className={styles.footer}>
