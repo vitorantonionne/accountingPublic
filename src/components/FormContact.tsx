@@ -13,17 +13,18 @@ export function FormContact() {
     })
   })
 
-  interface FormProps  {
-    nome: string
-    email: string
-    menssagem: string
-  }
+  // interface FormProps  {
+  //   nome: string
+  //   email: string
+  //   menssagem: string
+  // }
+
+  type FormProps = zod.infer<typeof newFormValidationSchema>
 
   const newFormValidationSchema = zod.object({
     nome: zod.string().min(1, 'Escreva seu nome'),
     email: zod.string().min(1, 'Escreva seu Email'),
     menssagem: zod.string().min(1, 'Escreva o assunto da menssagem'),
-
   })
 
   const { register, handleSubmit, reset} = useForm<FormProps>({

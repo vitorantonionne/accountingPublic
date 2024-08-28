@@ -2,8 +2,8 @@
   background-color: #25D366;
 
   position: fixed;
-  top: 90%;
-  left: 95%;
+  top: 86%;
+  left: 94%;
   border-radius: 8px;
 }
 
@@ -26,8 +26,8 @@
 
 @media (max-width: 1024px) {
   .whatsButton {
-    top: 89%;
-    left: 93%;
+    top: 85%;
+    left: 92%;
   }
 }
 
