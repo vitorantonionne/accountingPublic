@@ -13,15 +13,15 @@ export function Footer() {
       
       <div className={styles.locationContainer}>
         <ul>
-          <li><span><MapPin size={22} color='#F2F4F7'/></span>R.Pereira Filgueiras, 1310 - Sala 103 - Aldeota</li>
+          <li><span><MapPin size={22} color='#F2F4F7'/></span>R.Pereira Filgueiras, 1310 - Sala 101 - Aldeota</li>
           <li><span><Phone size={22}color='#F2F4F7'/></span>(85) 98816 - 4544 <br /> (85) 99985 - 6813</li>
-          <li><span><Envelope size={22}color='#F2F4F7'/></span>oscrar1234@gmail.com <br /> eleonoracmorais@bol.com.br</li>
+          <li><span><Envelope size={22}color='#F2F4F7'/></span>oscrar1234@gmail.com <br /> </li>
           <li>CRC - CE 013079/02</li>
         </ul>
       </div>
       <div className={styles.openContainer}>
         <ul>
-        <li><span><CalendarDots size={22} color='#F2F4F7'/></span>Segunda à Sexta-Feira <br /> das 09h00 às 17h00.</li>
+        <li><span><CalendarDots size={22} color='#F2F4F7'/></span>Segunda à Sexta-Feira <br /> das 09:00 às 12:00 e 14:00 às 16:00.</li>
         <li><span><CalendarX size={22} color='#F2F4F7'/></span>Sábados, Domingos e <br /> Feriados Fechado.</li>
         </ul>
       </div>

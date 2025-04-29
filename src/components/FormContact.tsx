@@ -38,7 +38,7 @@ export function FormContact() {
 
   const handleSubmitFormUser = (data: FormProps) => {
 
-    const message = `Olá, vim do site, sou ${data.nome} gostaria de mais informações. \n\nAssunto: \n${data.menssagem}`
+    const message = `Olá! Vim pelo site, sou ${data.nome} gostaria de mais informações. \n\nAssunto: \n${data.menssagem}`
     const encodedMessage = encodeURIComponent(message)
     const phoneNumber = '5585999856813'
 
